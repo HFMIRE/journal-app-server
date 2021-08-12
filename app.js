@@ -6,7 +6,6 @@ const { verifyToken } = require("./auth");
 const cors = require("cors");
 require("dotenv").config();
 const app = express();
-const port = 5000;
 app.use(express.json());
 app.use(cors());
 
@@ -97,8 +96,6 @@ app.delete(
   }
 );
 
-app.listen(port, () => {
-  console.log(`Server listening at http://localhost:${port}`);
-});
+app.listen(process.env.PORT || 5000);
 
 module.exports = app;
