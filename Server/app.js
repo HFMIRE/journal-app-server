@@ -4,10 +4,14 @@ const bcyrpt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const { verifyToken } = require("./auth");
 const cors = require("cors");
+const path = require("path");
 require("dotenv").config();
 const app = express();
+
 app.use(express.json());
 app.use(cors());
+app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static("public"));
 
 app.post("/users", async (req, res) => {
   const { username, password } = req.body;
