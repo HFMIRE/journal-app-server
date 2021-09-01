@@ -37,3 +37,15 @@ Server (Backend) - To deploy this project run
 What did you learn while building this project? What challenges did you face and how did you overcome them?
 
 One of the challenges I faced was with the authentication and authorisation aspect of this project. I think understanding the concept and applying it was difficult. I solve that problem by using local storage when I was authorising the JWT token in the frontend and using middleware to verify the token on each request to ensure that the request is secure.
+
+Add new features
+
+- popups for minor edit/ delete/
+
+* patch request - edit
+
+- images
+- public/private post
+- discover page + multiple users
+- add likes + filter likes + emotion -
+- patch req - forgetting password + add music + playlist version notes + based on mood
